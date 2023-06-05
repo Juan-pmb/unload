@@ -1,0 +1,420 @@
+* {
+    margin: 0%;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: inherit;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    background: #000000;
+    overflow: hidden;
+}
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.head {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+    background: #000000;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 9px 3px 20px #ac6291;
+
+}
+
+.navbar {
+    display: flex;
+    margin-right: 10px;
+}
+
+.logo {
+    margin-left: 30px;
+
+}
+
+.logo a {
+
+    text-decoration: none;
+    color: #ac6291;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.navbar a {
+    color: #ac6291 !important;
+    font-weight: 500;
+    padding: 0.5em 1.2em;
+    position: relative;
+    display: block;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 20px;
+
+}
+
+.navbar a:hover {
+
+    color: rgba(255, 255, 255, 2) !important;
+    transition: all 1s ease;
+    border-radius: 15px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont {
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+}
+
+.contInterno {
+    display: flex;
+    width: 400px;
+    height: 720px;
+    background-image: url(/Assets/img/distorcionado.jpg);
+    background-size: cover;
+}
+
+.burbuja {
+    border-radius: 50%;
+    background: #ad517f;
+    opacity: .3;
+    position: absolute;
+    animation: burbujas 3s linear infinite;
+}
+
+.burbuja:nth-child(3) {
+    width: 50px;
+    height: 50px;
+    left: 4%;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    bottom: -150px;
+}
+
+.burbuja:nth-child(4) {
+    width: 60px;
+    height: 60px;
+    left: 8%;
+    animation-duration: 3s;
+    animation-delay: 1.5s;
+    bottom: -150px;
+}
+
+.burbuja:nth-child(5) {
+    width: 80px;
+    height: 80px;
+    left: 13.5%;
+    animation-duration: 4s;
+    animation-delay: 3.2s;
+    bottom: -150px;
+}
+
+.burbuja:nth-child(6) {
+    width: 30px;
+    height: 30px;
+    left: 2%;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    bottom: -150px;
+}
+
+
+
+@keyframes burbujas {
+
+    0% {
+        bottom: 0;
+        opacity: 0;
+    }
+
+    30% {
+        transform: translate(65px);
+    }
+
+    50% {
+        opacity: .6;
+    }
+
+    100% {
+        bottom: 100vh;
+        opacity: 0;
+    }
+}
+.textos {
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    margin-top: 140px;
+    margin-left: 50px;
+    margin-right: 40px;
+    margin-bottom: 100px;
+}
+
+.textos h1 {
+    font-size: 60px;
+    text-shadow: 1px 1px 5px #cfc8cd;
+}
+
+.textos2 {
+
+    display: flex;
+    flex-direction: column;
+    padding-top: 0;
+    padding-bottom: 550px;
+}
+
+.textos2 h3 {
+    display: flex;
+    font-size: 45px;
+    color: #ffffff;
+    margin-top: 30px;
+    margin-left: 90px;
+    margin-right: 40px;
+    text-shadow: 1px 1px 5px #cfc8cd;
+}
+
+
+.contH {
+    display: flex;
+    margin-top: -635px;
+    margin-left: 400px;
+    flex-direction: column;
+    background: #ac6291;
+    width:1150px;
+    height: 620px;
+}
+
+.contH h1 {
+    font-family: 'Cormorant Garamond', serif;
+    padding: 30px;
+    font-size: 30px;
+    color: black;
+}
+
+.contH p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    padding: 20px;
+    color: black;
+}
+
+
+
+
+@media screen and (max-width: 767px) {
+    * {
+        margin: 0%;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: inherit;
+        text-align: center;
+        color: rgb(0, 0, 0);
+        background: #000000;
+        overflow-y: auto;
+    }
+
+    .head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 65px;
+        background: #000000;
+        position: fixed;
+        width: 100%;
+        z-index: 100;
+    }
+
+    .navbar {
+        display: flex;
+        margin-right: 10px;
+    }
+
+    .logo {
+        margin-left: 10px;
+
+    }
+
+    .logo a {
+
+        text-decoration: none;
+        color: #ac6291;
+        text-transform: uppercase;
+        font-size: 15px;
+    }
+
+    .navbar a {
+        color: #ac6291 !important;
+        font-weight: 500;
+        padding: 0.5em 1.2em;
+        position: relative;
+        display: block;
+        padding: 5px 10px;
+        text-decoration: none;
+        font-size: 13px;
+    }
+
+    .navbar a:hover {
+        color: rgba(255, 255, 255, 2) !important;
+        transition: all 1s ease;
+        border-radius: 15px;
+    }
+
+    .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .cont {
+        display: flex;
+        width:100%;
+        height: 320px;
+
+    }
+    .contInterno {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 300px;
+        background-image: url(/Assets/img/distorcionado.jpg);
+        background-size: cover;
+    }
+    .textos {
+        display: flex;
+        flex-direction: column;
+        color: #ffffff;
+        margin-top: 120px;
+        margin-left: 62px;
+        margin-bottom: 100px;
+        width: 300px;
+    }
+    .textos h1 {
+        font-size: 30px;
+        text-shadow: 1px 1px 5px #cfc8cd;
+    }
+    .textos2 h3 {
+        display: flex;
+        font-size: 35px;
+        color: #ffffff;
+        margin-top: -80px;
+        margin-left: 130px;
+        margin-right: 40px;
+    }
+    .burbuja {
+        border-radius: 50%;
+        background: #ad517f;
+        opacity: .3;
+        position: absolute;
+        animation: burbujas 3s linear infinite;
+    }
+    .burbuja:nth-child(3) {
+        width: 15px;
+        height: 15px;
+        left: 10%;
+        animation-duration: 5s;
+        animation-delay: 1s;
+        bottom: -150px;
+    }
+    
+    .burbuja:nth-child(4) {
+        width: 28px;
+        height: 28px;
+        left: 82%;
+        animation-duration: 3s;
+        animation-delay: 1.5s;
+        bottom: -150px;
+    }
+    
+    .burbuja:nth-child(5) {
+        width: 30px;
+        height: 30px;
+        left: 25.5%;
+        animation-duration: 4s;
+        animation-delay: 3.2s;
+        bottom: -150px;
+    }
+    
+    .burbuja:nth-child(6) {
+        width: 12px;
+        height: 12px;
+        left: 5%;
+        animation-duration: 5s;
+        animation-delay: 2s;
+        bottom: -150px;
+    }
+      
+    .burbuja:nth-child(7) {
+        width: 45px;
+        height: 45px;
+        left: 65%;
+        animation-duration: 5s;
+        animation-delay: 2s;
+        bottom: -150px;
+    }
+    @keyframes burbujas {
+    
+        0% {
+            bottom: 300px;
+            opacity: 0;
+        }
+    
+        50% {
+            opacity: .5;
+        }
+        60% {
+            opacity: .7;
+        }
+    
+        100% {
+            bottom: 100vh;
+            opacity: 0;
+        }
+    }
+    .contH {
+        margin: 0;
+        display: flex;
+        align-content: center;
+        flex-direction: column;
+        margin-top: 10px;
+        background: #ac6291;
+        width: 100%;
+        height: 1150px;
+       
+    }
+    .contH h1 {
+        font-family: 'Cormorant Garamond', serif;
+        padding: 10px;
+        font-size: 30px;
+        color: black;
+    }
+  
+    .contH p {
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 20px;
+        padding: 10px;
+        color: black;
+    }
+
+
+}

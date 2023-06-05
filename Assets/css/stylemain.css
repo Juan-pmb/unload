@@ -1,0 +1,346 @@
+* {
+    margin: 0%;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    box-sizing: border-box;
+    vertical-align: baseline;
+}
+
+
+body {
+    font-family: inherit;
+    text-align: center;
+    color: rgb(255, 249, 249);
+    /*  overflow: hidden;*/
+    background-size: cover;
+}
+
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.head {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+    background: #000000;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 9px 3px 20px #ac6291;
+
+}
+
+.navbar {
+    display: flex;
+    margin-right: 10px;
+}
+
+.logo {
+    margin-left: 30px;
+
+}
+
+.logo a {
+
+    text-decoration: none;
+    color: #ac6291;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.navbar a {
+    color: #ac6291 !important;
+    font-weight: 500;
+    padding: 0.5em 1.2em;
+    position: relative;
+    display: block;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 20px;
+
+}
+
+.navbar a:hover {
+
+    color: rgba(255, 255, 255, 2) !important;
+    transition: all 1s ease;
+    border-radius: 15px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-padre {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 10px;
+    gap: 1px;
+    width: 100%;
+    height: 100%;
+    background: #000000;  
+}
+
+.contenedor-hijo {
+    display: flex;
+    width: 400px;
+    height: 500px;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-left: 50px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    background-image: url(/Assets/img/distorcionado.jpg);
+    background-size: cover;
+    box-shadow: 1px 2px 20px #ac6291;
+    border-radius: 3px;
+}
+
+.contenedor-hijo .like {
+    display: flex;
+    margin-left: 5px;
+    width: 53px;
+}
+
+.contenedor-hijo .dislike {
+    display: flex;
+    padding-left: 5px;
+    margin-top: -42px;
+    margin-left: 50px;
+    width: 35px;
+}
+
+.contenedor-hijo p {
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 15px;
+    color: #000000;
+    margin-bottom: 200px;
+    background-color: #ac6291;
+    border-radius: 3px;
+    box-shadow: 1px 2px 20px #ac6291;
+
+}
+
+
+.img-main1 {
+
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-top: 20px;
+    margin-left: 150px;
+    width: 280px;
+    margin: 0%;
+    padding: 0;
+}
+
+.img-main2 {
+
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-top: 20px;
+    margin-left: 150px;
+    width: 250px;
+    margin: 0%;
+    padding: 0;
+}
+
+.img-main3 {
+
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-top: 20px;
+    margin-left: 190px;
+    width: 200px;
+    margin: 0%;
+    padding: 0;
+}
+
+.img-main4 {
+
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-top: 1px;
+    margin-left: 70px;
+    margin-right: 50px;
+    width: 250px;
+}
+
+.img-main5 {
+
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-top: 1px;
+    margin-left: 70px;
+    margin-right: 50px;
+    width: 200px;
+}
+
+.img-main6 {
+
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-top: 10px;
+    margin-left: 70px;
+    margin-right: 50px;
+    width: 200px;
+}
+
+.cont2 {
+   
+    padding: 60px;
+    background: rgb(0, 0, 0);
+    width: 100%;
+    height: 100%px;
+}
+
+.cont2 h1 {
+    font-size: 50px;
+    color: #ac6291;
+
+}
+
+.cont2 h2 {
+    font-family: 'Cormorant Garamond', serif;
+    margin-top: 80px;
+    font-size: 40px;
+    color: #ac6291;
+    text-align: left;
+}
+
+.cont2 h3 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    ;
+    margin-top: 10px;
+    font-size: 15px;
+    color: #ac6291;
+    text-align: left;
+}
+
+.ayudas {
+    display: flex;
+    width: 180px;
+    height: 38px;
+    padding-top: 8px;
+    padding-left: 1px;
+    color: #ffffff;
+    margin-top: 10px;
+    margin-left: 0px;
+    font-size: 20px;
+    background: #ac6291;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.ayudas:hover {
+
+    background:#efefef ;
+    cursor: pointer;
+    color: #ac6291;
+}
+
+
+@media  screen and (max-width: 767px) {
+    body {
+        font-family: inherit;
+        text-align: center;
+        color: rgb(255, 249, 249);
+        /*  overflow: hidden;*/
+        background-size: cover;
+    }
+    .head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 65px;
+        background: #000000;
+        position: fixed;
+        width: 100%;
+        z-index: 100;
+        box-shadow: 9px 3px 20px #ac6291;
+    }
+.navbar {
+    display: flex;
+    margin-right: 10px;
+}
+.logo {
+    margin-left: 10px;
+
+}
+.logo a {
+
+    text-decoration: none;
+    color: #ac6291;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+.navbar a {
+    color: #ac6291 !important;
+    font-weight: 500;
+    padding: 0.5em 1.2em;
+    position: relative;
+    display: block;
+    padding: 5px 10px;
+    text-decoration: none;
+    font-size: 13px;
+}
+.navbar a:hover {
+    color: rgba(255, 255, 255, 2) !important;
+    transition: all 1s ease;
+    border-radius: 15px;
+}
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-padre {
+
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding-top: 10px;
+    gap: -10px;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+}
+.contenedor-hijo {
+
+    display: flex;
+    width: 315px;
+    height: 500px;
+    flex-direction: column;
+    margin-top: 90px;
+    margin-left: 50px;
+    margin-right: 15px;
+    margin-bottom:30px;
+    background-image: url(/Assets/img/distorcionado.jpg);
+    background-size: cover;
+    box-shadow: 1px 2px 20px #ac6291;
+    border-radius: 3px;
+}
+.cont2 h1 {
+    margin-top: 10px;
+    font-size: 30px;
+    color: #ac6291;
+    width: 350px;
+    margin-left: -25px;
+}
+}
